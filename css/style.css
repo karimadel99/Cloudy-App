@@ -1,0 +1,77 @@
+.w-10{
+  width: 10%;
+}
+.contact-icons2 i{
+  border-radius: 50%;
+  padding: 8px;
+  transition: all .3s ease;
+}
+
+.contact-icons2 i:hover{
+  background-color: #0078FF;
+  color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  transition: all 1s;
+  font-weight: 600;
+}
+
+p{
+  font-size: 16px;
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.shadow-lg{
+  box-shadow: 0 2px 2rem white !important;
+
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid #0048ff;
+  border-left: 4px solid transparent;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+.vh-50{
+  height:50vh;
+}
+
+.card{
+  backdrop-filter: blur(80px);
+  background-color: rgba(255, 250, 230,.5) !important;
+  color: rgb(0, 35, 121) !important;
+}
+.card i{
+  color:#1679AB
+}
