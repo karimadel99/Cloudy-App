@@ -18,7 +18,7 @@ async function fetchWeather() {
           <p id="uv"><i class="fa-solid fa-sun"></i> UV Index: ${data.current.uv}</p>
           <div class="forecast d-flex flex-wrap justify-content-around my-3" id="forecast">
   ${data.forecast.forecastday.map(day => `
-    <div class="day shadow-lg px-5 py-3 rounded-3 col-10 col-md-4 col-lg-3 mb-3">
+    <div class="day shadow-lg px-5 py-3 rounded-3  col-md-6 col-lg-3 mb-3">
       <h3 class="h3">${new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' })}</h3>
       <img src="https:${day.day.condition.icon}" alt="${day.day.condition.text}" class="forecast-icon w-50">
       <p>${day.day.avgtemp_c}°C</p>
